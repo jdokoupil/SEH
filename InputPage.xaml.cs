@@ -32,6 +32,8 @@ namespace SEH
 
             SearchResultsPage searchResultsPage = new SearchResultsPage();
             this.NavigationService.Navigate(searchResultsPage);
+
+
         }
     }
 }

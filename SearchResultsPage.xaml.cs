@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Google.Apis;
 
 namespace SEH
 {
@@ -29,9 +30,13 @@ namespace SEH
 
         public void search( string search )
         {
+            
+
             ImageProcessor processor = new ImageProcessor();
             var res = processor.LoadImage(search);
             MessageBox.Show(((ResultModel)res).Src);
+
+            
         }
     }
 }
